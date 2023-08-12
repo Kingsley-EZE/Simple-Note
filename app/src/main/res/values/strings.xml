@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Simple-Note</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lorem">lorem ipsum textLorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Nullam euismod eleifend aliquam. Fusce ullamcorper
+        justo in felis dapibus, ac aliquet urna hendrerit. Sed vulputate diam non mauris
+        aliquam, non iaculis est pellentesque.</string>
+    <string name="loremm">lorem ipsum textLorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Nullam euismod eleifend aliquam. Fusce ullamcorper
+        justo in felis dapibus, ac aliquet urna hendrerit.</string>
+</resources>
