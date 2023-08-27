@@ -21,7 +21,9 @@
         tools:layout="@layout/fragment_add_note" >
         <action
             android:id="@+id/action_addNoteFragment_to_noteListFragment"
-            app:destination="@id/noteListFragment" />
+            app:destination="@id/noteListFragment"
+            app:popUpTo="@id/addNoteFragment"
+            app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_addNoteFragment_to_colorPickerBottomSheet"
             app:destination="@id/colorPickerBottomSheet" />
