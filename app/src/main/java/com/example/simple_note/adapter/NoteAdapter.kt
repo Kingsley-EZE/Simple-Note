@@ -3,11 +3,13 @@ package com.example.simple_note.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.simple_note.R
 import com.example.simple_note.databinding.NoteItemBinding
 import com.example.simple_note.models.Note
+import com.example.simple_note.models.Priority
 
 class NotesAdapter(
-    private val notes: List<Note>,
+    private val notes: ArrayList<Note>,
     private inline val onItemSelected: (Note) -> Unit = {}
 ) : RecyclerView.Adapter<NotesAdapter.ViewHolder>(){
 
@@ -31,7 +33,13 @@ class NotesAdapter(
         fun bind(note: Note){
             binding.noteItemTitle.text = note.noteTitle
             binding.noteItemContent.text = note.noteContent
-            binding.editDate.text = note.date
+            binding.editDate.text = note.lastEdited
+            when(note.priority) {
+                Priority.LOW -> binding.priorityTag.setImageResource(R.drawable.ic_priority_low)
+                Priority.MEDIUM -> binding.priorityTag.setImageResource(R.drawable.ic_priority_medium)
+                Priority.HIGH -> binding.priorityTag.setImageResource(R.drawable.ic_priority_high)
+            }
+
         }
     }
 }

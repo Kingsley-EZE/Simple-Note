@@ -9,4 +9,10 @@
     <string name="loremm">lorem ipsum textLorem ipsum dolor sit amet,
         consectetur adipiscing elit. Nullam euismod eleifend aliquam. Fusce ullamcorper
         justo in felis dapibus, ac aliquet urna hendrerit.</string>
+    <string name="medium">MEDIUM</string>
+    <string name="high">HIGH</string>
+    <string name="low">LOW</string>
+    <string name="note_title">Note Title</string>
+    <string name="no_note_added_yet">No note added yet</string>
+    <string name="dd_mm_yy">dd-mm-yy</string>
 </resources>

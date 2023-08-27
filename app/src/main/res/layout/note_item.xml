@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_margin="@dimen/_7sdp"
     android:padding="@dimen/_10sdp"
     android:background="@drawable/note_item_bg"
@@ -24,34 +24,41 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:text="@string/lorem"
+        android:maxLines="7"
+        android:ellipsize="end"
         android:layout_marginTop="@dimen/_7sdp"
         android:textColor="#303030"
         android:textSize="@dimen/_14ssp"
         />
 
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="end"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:orientation="horizontal">
+        android:layout_marginTop="@dimen/_10sdp">
 
         <ImageView
+            android:id="@+id/priority_tag"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/icon_calendar"/>
+            android:src="@drawable/ic_priority_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
 
         <TextView
             android:id="@+id/edit_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="dd-mm-yy"
+            android:text="@string/dd_mm_yy"
             android:textColor="@color/black"
-            android:textSize="@dimen/_14ssp"
+            android:textSize="@dimen/_10ssp"
             android:textStyle="bold"
-            android:layout_marginStart="@dimen/_6sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/priority_tag"
+            app:layout_constraintBottom_toBottomOf="@id/priority_tag"
             />
 
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>

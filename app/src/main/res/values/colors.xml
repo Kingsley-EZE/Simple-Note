@@ -12,4 +12,9 @@
     <color name="color8">#D690FF</color>
     <color name="color9">#B69C00</color>
     <color name="color10">#069CFF</color>
+    <color name="gray100">#E8EBED</color>
+    <color name="gray400">#626362</color>
+    <color name="green">#36AB3B</color>
+    <color name="yellow">#FBCB3A</color>
+    <color name="red">#E13124</color>
 </resources>
